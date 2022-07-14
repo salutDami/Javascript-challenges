@@ -1,13 +1,14 @@
 'use strict';
 
-// There was a test in your class and you passed it. Congratulations! But you're an ambitious person. You want to know /// if you're better than the average student in your class.
+/* There was a test in your class and you passed it. Congratulations! But you're an ambitious person. You want to know /if you're better than the average student in your class.
 
-// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+ You receive an array with your peers' test scores. Now calculate the average and compare your score!
 
-// Return True if you're better, else False!
+ Return True if you're better, else False!
 
-// Note:
-// Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+Note:
+Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+*/
 
 // Solution
 function betterThanAverage(classPoints, yourPoints) {
@@ -47,4 +48,48 @@ function abbrevName(name){
   }
   
   console.log(abbrevName("Stephen Ikuomola"));
+
+
+
+
+
+  //  Solutions 
+function countPositivesSumNegatives(input) {
+
+ if (input.length < 1 || input === null ) {
+   return []
+ } 
+
+ let arrayNew = [0, 0]
+
+ for (let i = 0; i < input.length; i++) {
+   if (input[i] > 0) {
+    arrayNew[0] = arrayNew[0] + 1;
+   } else if (input[i] < 0) {
+    arrayNew[1] = arrayNew[1] + input[i];
+   }
+ }
+ return arrayNew;
+}
+
+
+const dataset = countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
+console.log(dataset);
+
+
+/* 
+
+Given an array of forecasted maximun temperatures, the thermometer display a string with given temperature. Example [17, 21, 23] will print "... 17°C in 1 days ... 21°C in 2 days ... 23°C in 3 days ..."
+
+1. Create a function that will take in an array and logs a string like the above to the console. Try it for both datasets.
+2. Use problem-solving framework: Understand the problem and break into sub-problems.
+
+[17, 21, 23];
+[12, 5, -5, 0, 4];
+
+*/ 
+
+
+// Solution 
+
 
